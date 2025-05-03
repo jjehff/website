@@ -1,0 +1,32 @@
+// All CSS below this was purely to make website nicer
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .me h1{
+    animation: fadeInUp 5s ease forwards;
+  }
+  
+  .App {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+  }
+  
+  section {
+    scroll-snap-align: start;
+  }
+  
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+  
