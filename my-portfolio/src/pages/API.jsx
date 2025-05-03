@@ -4,7 +4,7 @@ function PhotoAPI() {
   const [imgUrl, setImgUrl] = useState(null);
 
   const fetchPhoto = async () => {
-    const res = await fetch('https://website-2-tab4.onrender.com/api/photo');
+    const res = await fetch('https://website-3-iasp.onrender.com/api/photo');
     const data = await res.json();
     setImgUrl(data.url);
   };
