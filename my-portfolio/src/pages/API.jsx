@@ -11,11 +11,10 @@ function PhotoAPI() {
 
   return (
     <div className="text-center">
-      <button onClick={fetchPhoto}>Photo</button>
-      <img src={imgUrl}/>
+      <button onClick={fetchPhoto}>Get Photo</button>
+      {imgUrl && <img src={imgUrl}/>}
     </div>
   );
 }
 
 export default PhotoAPI;
-
