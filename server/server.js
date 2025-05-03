@@ -1,9 +1,11 @@
 import express from 'express';
 import fetch from 'node-fetch';
 import cors from 'cors';
+import dotenv from 'dotenv';
 
+dotenv.config();
 const app = express();
-const API_KEY = 'FFVfWlvwEJlKPxCLLvMBe0tG0twwVS6RN9wma7FV8O2ltL4yTlbCdgJL';
+const API_KEY = process.env.PEXELS_API;
 
 app.use(cors());
 
