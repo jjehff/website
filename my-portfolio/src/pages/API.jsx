@@ -12,7 +12,7 @@ function PhotoAPI() {
   return (
     <div className="text-center">
       <button onClick={fetchPhoto}>Get Photo</button>
-      {imgUrl && <img src={imgUrl}/>}
+      <img src={imgUrl}/>
     </div>
   );
 }
